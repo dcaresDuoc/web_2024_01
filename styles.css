@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center; /* Centrar el encabezado */
-    color: #ec21b3; /* Color del texto */
+    color: #6b686a; /* Color del texto */
 }
 
 table {
@@ -33,3 +33,70 @@ th, td {
 th {
     background-color: #f2f2f2; /* Color de fondo del encabezado */
 }
+
+/* Css para las imagenen del carrusel*/
+
+/* .carousel-item {
+    height: 65vh; 
+} */
+
+.carousel-item img {
+    width: 100%; /* Esto garantiza que la imagen sea tan ancha como su contenedor */
+    height: 100%; /* Esto garantiza que la imagen sea tan alta como su contenedor */
+    object-fit: cover; /* Esto recorta la imagen para cubrir el área disponible, podría recortar partes de la imagen */
+}
+
+
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) {
+  .custom-carousel .carousel-item {
+    height: 400px; /* Altura para dispositivos medianos */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+  .custom-carousel .carousel-item {
+    height: 500px; /* Altura para dispositivos grandes */
+  }
+}
+
+/* Estilos para pantallas muy grandes */
+@media (min-width: 1200px) {
+  .custom-carousel .carousel-item {
+    height: 600px; /* Altura para dispositivos muy grandes */
+  }
+}
+
+/* Css para las imagenen del logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Asegúrate de que la imagen del logo no sea demasiado grande */
+.img-logo {
+    max-height: 100px; /* Ajusta esto según el tamaño deseado */
+    width: auto;
+}
+
+
+/* Estilos para los enlaces del menú */
+/* Estilos para los enlaces del menú */
+.navbar-nav .nav-link {
+    transition: all 0.3s ease; /* Para un efecto suave al aplicar el subrayado */
+    border-bottom: 2px solid transparent; /* Prepara un borde transparente para evitar saltos visuales al hacer hover */
+}
+
+/* Estilos para el estado hover de los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    border-bottom-color: green; /* Cambia el color del borde a verde al hacer hover */
+}
+
+
+
+
+
+
