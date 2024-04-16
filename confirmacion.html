@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación</title>
+    <!-- Incluir Bootstrap CSS y otros archivos necesarios -->
+</head>
+<body>
+    <!-- Mensaje de confirmación -->
+    <div id="mensaje"></div>
+    
+    <script>
+        // Obtener el mensaje de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const mensaje = urlParams.get('mensaje');
+        
+        // Mostrar el mensaje
+        if (mensaje) {
+            document.getElementById('mensaje').textContent = mensaje;
+        }else{
+            alert("nada")
+        }
+    </script>
+</body>
+</html>

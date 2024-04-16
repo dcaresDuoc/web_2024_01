@@ -121,22 +121,60 @@
     <div class="col-12 col-md-12">
         <h1>Nuestros Precios</h1>
     </div>
-
-    <div class="row">
-        <!-- Caja izquierda que toma la mitad del ancho en pantallas pequeñas y un tercio en medianas y grandes -->
-        <div class="col-4 col-md-4" style="background-color: lightblue; padding: 20px; margin-top: 10px;">            
-            
+<br>
+    <div >
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-1">
+              <h3>Psicoterapia Adulto</h3>
+              <h5>$19.990</h5>
+              <p>Duracion  : 50 Minutos de tarapia</p>
+              <p>Modalidad : Presencial y virtual</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-2">
+              <h3>UI Components</h3>
+              <p>Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
+                of mobile UI components, ready to go.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-3">
+              <h3>Theming</h3>
+              <p>Learn how to easily customize and modify your app’s design to fit your
+                brand across all mobile platform styles.</p>
+            </div>
+          </div>
         </div>
-        <!-- Caja derecha que toma la mitad del ancho en pantallas pequeñas y dos tercios en medianas y grandes -->
-        <div class="col-4 col-md-4" style="background-color: lightcoral; padding: 20px; margin-top: 10px;">
-            Caja 2 (Ocupa 6 columnas en móviles, 8 columnas desde pantalla mediana)
-        </div>
 
-        <div class="col-4 col-md-4" style="background-color: lightblue; padding: 20px; margin-top: 10px;">            
-            
-        </div>
+        <br>
 
-    </div>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="card card-1">
+                <h3>Ionic Native</h3>
+                <p>A curated set of   ES5/ES6/TypeScript wrappers for plugins to easily add any native functionality to your Ionic apps.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-2">
+                <h3>UI Components</h3>
+                <p>Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
+                  of mobile UI components, ready to go.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-3">
+                <h3>Theming</h3>
+                <p>Learn how to easily customize and modify your app’s design to fit your
+                  brand across all mobile platform styles.</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <br>
 
       
     <h1>Tabla Ejemplo para los muchachos</h1>
@@ -170,34 +208,35 @@
 
 <div class="container mt-5">
     <h2>Formulario Personal</h2>
-    <form>
+    <form action="submit.php" method="post" class="mt-5">
         <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
         </div>
         <div class="form-group">
             <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
         </div>
         <div class="form-group">
             <label for="correo">Correo</label>
-            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+            <input type="email" class="form-control" name="correo" id="correo" placeholder="Ingresa tu correo electrónico">
         </div>
         <div class="form-group">
             <label for="telefono">Número de Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+            <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Ingresa tu número de teléfono">
         </div>
         <div class="form-group">
             <label for="pais">País</label>
-            <select class="form-control" id="pais">
+            <select class="form-control" name="pais" id="pais">
                 <option>Selecciona tu país</option>
-                <option>País 1</option>
-                <option>País 2</option>
-                <option>País 3</option>
+                <option value="País 1">País 1</option>
+                <option value="País 2">País 2</option>
+                <option value="País 3">País 3</option>
             </select>
         </div>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
     </form>
+    
 </div>
 
 
