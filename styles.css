@@ -51,21 +51,21 @@ th {
 /* Estilos para pantallas medianas */
 @media (min-width: 768px) {
   .custom-carousel .carousel-item {
-    height: 400px; /* Altura para dispositivos medianos */
+    height: 300px; /* Altura para dispositivos medianos */
   }
 }
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
   .custom-carousel .carousel-item {
-    height: 500px; /* Altura para dispositivos grandes */
+    height: 400px; /* Altura para dispositivos grandes */
   }
 }
 
 /* Estilos para pantallas muy grandes */
 @media (min-width: 1200px) {
   .custom-carousel .carousel-item {
-    height: 600px; /* Altura para dispositivos muy grandes */
+    height: 500px; /* Altura para dispositivos muy grandes */
   }
 }
 
@@ -95,6 +95,64 @@ th {
     border-bottom-color: green; /* Cambia el color del borde a verde al hacer hover */
 }
 
+
+
+.card{
+
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(1, 81, 28, 0.244), 0 0 6px rgba(1, 255, 86, 0.244);
+     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+}
+  
+  .card:hover{
+       transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  .card h3{
+    font-weight: 600;
+  }
+  
+  .card img {
+    max-height: 120px; /* o el tamaño que desees */
+    width: 120px; /* Para hacer el círculo perfecto, el ancho y la altura deben ser iguales */
+    border-radius: 50%; /* Esto hará que la imagen sea completamente redonda */
+    position: absolute;
+    top: 20px; /* Ajusta la posición según sea necesario */
+    right: 15px; /* Ajusta la posición según sea necesario */
+    object-fit: cover; /* Esto asegurará que la imagen cubra el área del círculo */
+  }
+  
+  
+  .card-1{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/022/997/890/original/psychology-psychotherapy-practice-psychological-help-psychiatrist-consulting-patient-psychologist-online-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  .card-2{
+     background-image: url(https://www.vecteezy.com/vector-art/25441281-psychologist-consulting-patient-psychotherapy-practice-psychological-help-psychologist-service-private-counseling-psychology-modern-flat-cartoon-style-vector-illustration-on-white-background);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  .card-3{
+     background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 
 
 
 
